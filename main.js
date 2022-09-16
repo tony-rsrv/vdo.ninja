@@ -2625,7 +2625,7 @@ async function main(){ // main asyncronous thread; mostly initializes the user s
 		`;
 		document.head.appendChild(styleTmp);
 	}
-	getById("credits").innerHTML = "Version: " + session.version + " - " + getById("credits").innerHTML;
+	getById("credits").innerHTML = "Version: " + session.version;
 	
 	if (urlParams.has('hideheader') || urlParams.has('noheader') || urlParams.has('hh')) { // needs to happen the room and permaid applications
 		getById("header").style.display = "none";
